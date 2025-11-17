@@ -52,10 +52,6 @@ function updateCity(event) {
       </div>
       
       <a class="home" href="/">HOME</a>`;
-
-  setTimeout(function () {
-    updateCity(event);
-  }, 1000);
 }
 
 setInterval(updateTime, 1000);
