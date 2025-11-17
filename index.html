@@ -4,22 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap"
+      rel="stylesheet"
+    />
     <title>World Clock</title>
   </head>
   <body>
-    <div class="container"></div>
-    <header>
-      <h1>World Clock</h1>
-    </header>
-    <select name="" id="">
-      <option value="">Select a City</option>
-    </select>
-    <div class="city"></div>
-    <div class="date"></div>
-    <div class="time"></div>
+    <div class="container">
+      <header>World Clock</header>
+      <select name="" id="">
+        <option value="">Select a City</option>
+        <option value="">Atlanta</option>
+        <option value="">Sevilla</option>
+        <option value="">Rio de Janeiro</option>
+        <option value="">Seoul</option>
+      </select>
+      <div class="city-unit">
+        <div>
+          <div class="city">City</div>
+          <div class="date">Day, Month Year</div>
+        </div>
+        <div class="time">HH:MM:SS <small>AM</small></div>
+      </div>
+      <div class="city-unit">
+        <div>
+          <div class="city">City 2</div>
+          <div class="date">Day, Month Year</div>
+        </div>
+        <div class="time">HH:MM:SS <small>AM</small></div>
+      </div>
+    </div>
     <footer>
-      This project was coded by Jasmin Gonzalez, open-sourced on
+      This project was coded by <span class="name">Jasmin Gonzalez</span>,
+      open-sourced on
       <a
         href="https://github.com/jasmin-alejandra/shecodes-plus-worldclock"
         target="_blank"

@@ -1,4 +1,76 @@
 body {
-  background-color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  background-color: #fafafa;
+  border: rgb(104, 84, 84);
+  border-radius: 12px;
+  border-style: solid;
+  box-shadow: 20px 20px 30px rgba(104, 84, 84, 0.2);
+  max-width: 65%;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+header {
+  color: #c9356c;
+  font-family: "Momo Trust Display", sans-serif;
+  font-size: 36px;
+  padding: 0 0 15px;
   text-align: center;
+}
+
+select {
+  border-radius: 5px;
+  color: #685454;
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin: 0 auto 15px;
+  text-align: center;
+  width: 85%;
+}
+
+.city-unit {
+  align-items: center;
+  border-bottom: 1px dashed rgb(104, 84, 84, 0.5);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.city-unit:last-child {
+  border: none;
+}
+.city {
+  color: #685454;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.date {
+  color: #f48db4;
+}
+
+.time {
+  color: #ff347f;
+  font-size: 36px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.time small {
+  font-size: 18px;
+  vertical-align: middle;
+}
+footer {
+  color: rgb(104, 84, 84, 0.8);
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+}
+a {
+  color: #f48db4;
+}
+.name {
+  color: #ff347f;
 }
