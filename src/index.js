@@ -20,9 +20,24 @@ function updateTime() {
     cityTimeElementB.innerHTML = cityCurrentB.format("h:mm:ss");
     cityTimeElementSmallB.innerHTML = cityCurrentB.format("A");
   }
+
+  let cityElementC = document.querySelector(".city-unit-c");
+  if (cityElementC) {
+    let cityDateElementC = cityElementC.querySelector(".date");
+    let cityTimeElementC = cityElementC.querySelector(".time .value");
+    let cityTimeElementSmallC = cityElementC.querySelector(".time small");
+    let cityCurrentC = moment().tz("Europe/Madrid");
+    cityDateElementC.innerHTML = cityCurrentC.format("MMMM D, YYYY");
+    cityTimeElementC.innerHTML = cityCurrentC.format("h:mm:ss");
+    cityTimeElementSmallC.innerHTML = cityCurrentC.format("A");
+  }
 }
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let cityElement = document.querySelector(".cities");
@@ -34,10 +49,15 @@ function updateCity(event) {
         <div class="time"><span class="value">${cityTime.format(
           "h:mm:ss"
         )}</span> <small>${cityTime.format("A")}</small></div>
-      </div>`;
+      </div>
+      
+      <a class="home" href="/">HOME</a>`;
+
+  setTimeout(function () {
+    updateCity(event);
+  }, 1000);
 }
 
-updateTime();
 setInterval(updateTime, 1000);
 
 let citySelectElement = document.querySelector("#city");

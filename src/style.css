@@ -33,17 +33,15 @@ select {
 }
 
 .city-unit,
-.city-unit-b {
+.city-unit-b,
+.city-unit-c {
   align-items: center;
   border-bottom: 1px dashed rgb(104, 84, 84, 0.5);
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
 }
-.city-unit:last-child {
-  border: none;
-}
-.city-unit-b:last-child {
+.city-unit-c:last-child {
   border: none;
 }
 .city {
@@ -66,6 +64,13 @@ select {
   font-size: 18px;
   vertical-align: middle;
 }
+
+.home {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+}
+
 footer {
   color: rgb(104, 84, 84, 0.8);
   font-size: 12px;
