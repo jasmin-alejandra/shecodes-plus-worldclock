@@ -10,13 +10,13 @@ body {
   box-shadow: 20px 20px 30px rgba(104, 84, 84, 0.2);
   max-width: 65%;
   margin: 50px auto;
-  padding: 25px;
+  padding: 35px;
 }
 
 header {
   color: #c9356c;
   font-family: "Momo Trust Display", sans-serif;
-  font-size: 36px;
+  font-size: 48px;
   padding: 0 0 15px;
   text-align: center;
 }
@@ -32,7 +32,8 @@ select {
   width: 85%;
 }
 
-.city-unit {
+.city-unit,
+.city-unit-b {
   align-items: center;
   border-bottom: 1px dashed rgb(104, 84, 84, 0.5);
   display: flex;
@@ -40,6 +41,9 @@ select {
   padding: 15px 0;
 }
 .city-unit:last-child {
+  border: none;
+}
+.city-unit-b:last-child {
   border: none;
 }
 .city {

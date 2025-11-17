@@ -10,31 +10,36 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
     <div class="container">
       <header>World Clock</header>
-      <select name="" id="">
+      <select name="" id="city">
         <option value="">Select a City</option>
-        <option value="">Atlanta</option>
-        <option value="">Sevilla</option>
-        <option value="">Rio de Janeiro</option>
-        <option value="">Seoul</option>
+        <option value="America/Mexico_City">Mexico City</option>
+        <option value="America/Manaus">Manaus</option>
+        <option value="Africa/Casablanca">Casablanca</option>
+        <option value="Asia/Gaza">Gaza</option>
+        <option value="Asia/Seoul">Seoul</option>
       </select>
-      <div class="city-unit">
-        <div>
-          <div class="city">City</div>
-          <div class="date">Day, Month Year</div>
+      <div class="cities">
+        <div class="city-unit">
+          <div>
+            <div class="city">Atlanta</div>
+            <div class="date"></div>
+          </div>
+          <div class="time"><span class="value"></span> <small></small></div>
         </div>
-        <div class="time">HH:MM:SS <small>AM</small></div>
-      </div>
-      <div class="city-unit">
-        <div>
-          <div class="city">City 2</div>
-          <div class="date">Day, Month Year</div>
+        <div class="city-unit-b">
+          <div>
+            <div class="city">Monterrey</div>
+            <div class="date"></div>
+          </div>
+          <div class="time"><span class="value"></span> <small></small></div>
         </div>
-        <div class="time">HH:MM:SS <small>AM</small></div>
       </div>
     </div>
     <footer>
